@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		* {
+			font-family: Arial;
+			line-height: 1.5em;
+		}
+		h1 {
+			font-size: 3em;
+		}
+		h2 {
+			font-size: 2em;
+		}
+		hr {
+			width: 20%;
+   			margin: 5px 0;
+		}
+		li {
+			padding-left: 16px;
+			cursor: pointer;
+		}
+		.done {
+			color: lightgrey !important;
+			font-style: italic;
+		}
+		.other {
+			color: gold;
+		}
+		.unsure {
+			color: red;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+<h1>Web Checklist</h1>
+
+<h2>To Do:</h2>
+<ol>
+	<li>Create a checklist system that runs apart from an individual device</li>
+	<li>Make a checkbox, at the end of the list, that stores data and prints it to the page</li>
+	<li>Make a means of deleting data</li>
+	<li>Store data</li>
+	<li>Design everything in as minimally as possible</li>
+</ol>
+
+
+
+
+
+
+<h2>Another List:</h2>
+<ul>
+	<h3>Sub List 1:</h3>
+	<li>List Item</li>
+	<li>List Item</li>
+	<li class="unsure">List Item</li>
+	<ul>
+		<li class="done">List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<hr>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+	</ul>
+
+	<h3>Sub List 2:</h3>
+	<li class="other">List Item</li>
+	<li>List Item</li>
+		<ul>
+			<li class="done">List Item</li>
+			<li class="other">List Item</li>
+		</ul>
+	<li>List Item</li>
+		<ul>
+			<li class="other">List Item</li>
+		</ul>
+	<li>List Item</li>
+		<ul>
+			<li class="done">List Item</li>
+			<li class="other">List Item</li>
+		</ul>
+	<li>List Item</li>
+		<ul>
+			<li class="other">List Item</li>
+			<li class="done">List Item</li>
+			<li class="other">List Item</li>
+		</ul>
+	<li>List Item</li>
+		<ul>
+			<li class="done">List Item</li>
+			<li class="other">List Item</li>
+			<li class="done">List Item</li>
+		</ul>
+	<li class="done">List Item</li>
+	<input type="textbox">
+</ul>
+
+<script>
+	$(document).ready(function(){
+		$("li").click(function(){
+			$(this).toggleClass("done");
+		});
+		$("li").dblclick(function(){
+			$(this).toggleClass("other");
+		});
+	});
+</script>
+</body>
+</html>
