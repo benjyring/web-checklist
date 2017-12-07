@@ -1,0 +1,30 @@
+* {
+	font-family: Arial;
+	line-height: 1.5em;
+}
+h1 {font-size: 3em;}
+h2 {font-size: 2em;}
+hr {
+	margin: 5px 0;
+	width: 20%;
+}
+li {
+	padding-left: 16px;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.done {
+	color: lightgrey !important;
+	font-style: italic;
+}
+.other {
+	color: gold;
+}
+.unsure {
+	color: red;
+}
